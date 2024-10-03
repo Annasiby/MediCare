@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.nav{
+    background-color: hsl(248, 100%, 72%);
+    padding-left:30px;
+    padding-right:30px;
+    border-radius: 10px;
+    height: 70px;
+    width:100%;
+    box-shadow:0 15px 20px rgb(0, 0, 0, 0.1);
+    position:relative;
+    border-bottom: 1px solid;
+}
+.ic{
+    height: 45px;
+}
+.Name {
+    font-size:20px;
+    color:black;
+
+}
+h1{
+    font-size:2.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation{
+   border: 1px solid white;
+   padding:6px;
+   color:white;
+   border-radius: 15px;
+   font-size:15px;
+}
+.About{
+    font-size: 1.25rem;
+
+}
+.role-choose{
+    display:flex;
+    gap:50px;
+    justify-content: center;
+    align-items: center;
+    border:1px solid hsl(0, 0%, 80%);
+    background-color: hsl(248, 100%, 72%);
+    padding:10px;
+    margin:10px;
+    border-radius:10px;
+    box-shadow:0 15px 20px rgb(0, 0, 0, 0.1);
+}
+.role-card{
+    border:1px solid white;
+    border-radius: 5px;
+    padding:10px;
+    display: grid;
+    place-items: center;
+    background-color:white;
+    height:400px;
+    width:400px;
+    font-size: 2rem;
+}
+.role{
+    height: 200px;
+}
+
+.role-card:hover{
+    background-color:hsl(0, 0%, 90%);
+    cursor: pointer;
+}
+.role-card:active{
+    background-color:hsl(0, 0%, 100%);
+}
+.footer{
+    border-top: 1px solid;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex: 1 1 300px;
+    margin: 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p,
+  .footer-section a {
+    color: #bbb;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    color: #fff;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-bottom {
+    background-color: hsl(248, 100%, 72%);
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Footer */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-section {
+      margin-bottom: 20px;
+    }
+  }
+  /*login page*/
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  body{
+      position:relative;
+      height: 100vh;
+      margin:0;
+      padding:none;
+  }
+  .login-container{
+    background-color: white;
+    padding:2rem 1.5rem;
+    margin:auto;
+    max-width:410px;
+    border-radius: 0.5rem;
+    box-shadow:0 15px 20px rgb(0, 0, 0, 0.1);
+  }
+   .login-container .form-title{
+    text-align:center;
+    font-size: 1.37rem;
+    margin-bottom:1.87rem;
+    font-weight: 600;
+   }
+  .login-container .social-login{
+    display:flex;
+    gap:1.3rem;
+  }
+  .social-login .social-button{
+    display:flex;
+    width:100%;
+    gap:0.81rem;
+    cursor:pointer;
+    font-size:1rem;
+    align-items: center;
+    justify-content: center;
+    padding:0.75rem;
+    border-radius: 0.31rem;
+    border:  1px solid white;
+  }
