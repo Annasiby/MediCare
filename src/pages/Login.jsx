@@ -14,20 +14,21 @@ const Login = () => {
         Apple
       </button>
     </div>
-    <p className="seperator"><span>or</span></p>
+    <p className="seperator"><span >or</span></p>
 
     <form action="#" className="login form">
-      <div className="input-wrapper">
+      <div className="inputs">
         <input type="email" placeholder="Email address" className="input-wrapper" required/>
         <img src="email.png" alt="Email" className="social-button"/>
       </div>
 
-      <div className="input-wrapper">
+      <div className="inputs">
         <input type="password" placeholder="Password" className="input-wrapper" required/>
         <img src="lock.png" alt="Lock" className="social-button"/>
       </div>
-    <a href="#" className="forgot-password-link">Forgot Password?</a>
     <button className="login-button">Login</button>
+    <br></br>
+    <a href="#" className="forgot-password-link">Forgot Password?</a>
     </form>
 
     <p className="signup-text">Don't have an account? <a href="#">Sign up now</a></p>

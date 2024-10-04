@@ -1,6 +1,14 @@
 import React from 'react'
+import { GoTools } from 'react-icons/go';
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+  const navigate = useNavigate();
+  
+  const gotoLogin = () => {
+    navigate('/login');
+  }
+ 
   return (
     <div className='roles '>
       <p className="About">
@@ -10,16 +18,16 @@ const Home = () => {
       <h1>Choose your role</h1>
        <div className="role-choose ">
         <div className="role-card">
-          <img className=' role cursor-pointer' src="/admin.png" alt="Admin" />
-          <button className="role-btn">Admin</button>
+          <img className=' role ' src="/admin.png" alt="Admin" />
+          <button  className="role-btn" onClick={gotoLogin} >Admin</button>
         </div>
         <div className="role-card">
-          <img className='role cursor-pointer'src="/patient.png" alt="Patient" />
-          <button className="role-btn">Patient</button>
+          <img className='role 'src="/patient.png" alt="Patient" />
+          <button className="role-btn" onClick={gotoLogin}>Patient</button>
         </div>
         <div className="role-card">
-          <img className='role cursor-pointer'src="/doctor.png" alt="Doctor" />
-          <button className="role-btn">Doctor</button>
+          <img className='role 'src="/doctor.png" alt="Doctor" />
+          <button className="role-btn" onClick={gotoLogin}>Doctor</button>
         </div>
       </div>
     </div>
