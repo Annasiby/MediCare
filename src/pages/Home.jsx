@@ -1,14 +1,20 @@
-import React from 'react'
-import { GoTools } from 'react-icons/go';
-import { useNavigate } from 'react-router-dom'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+{/*import { GoTools } from 'react-icons/go';*/}
 
 const Home = () => {
-  const navigate = useNavigate();
   
-  const gotoLogin = () => {
-    navigate('/login');
-  }
- 
+  
+    // State variable to store the chosen role
+    const [roleName, setRoleName] = useState('');
+    const navigate = useNavigate(); // For navigation
+  
+    // Function to handle role selection and navigate to the login page
+    const gotoLogin = (role) => {
+      setRoleName(role);  // Save the selected role in roleName
+      navigate(`/login?role=${role}`); //Navigate to login page with role as a query parameter
+    };
+
   return (
     <div className='roles '>
       <p className="About">
@@ -19,17 +25,18 @@ const Home = () => {
        <div className="role-choose ">
         <div className="role-card">
           <img className=' role ' src="/admin.png" alt="Admin" />
-          <button  className="role-btn" onClick={gotoLogin} >Admin</button>
+          <button  className="role-btn" onClick={()=>gotoLogin('Admin')} >Admin</button>
         </div>
         <div className="role-card">
           <img className='role 'src="/patient.png" alt="Patient" />
-          <button className="role-btn" onClick={gotoLogin}>Patient</button>
+          <button className="role-btn" onClick={()=>gotoLogin('Patient')}>Patient</button>
         </div>
         <div className="role-card">
           <img className='role 'src="/doctor.png" alt="Doctor" />
-          <button className="role-btn" onClick={gotoLogin}>Doctor</button>
+          <button className="role-btn" onClick={()=>gotoLogin('Doctor')}>Doctor</button>
         </div>
       </div>
+      <p>Selected Role: {roleName}</p>
     </div>
   )
 }

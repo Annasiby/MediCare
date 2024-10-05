@@ -21,7 +21,6 @@
 .Name {
     font-size:30px;
     color:black;
-
 }
 h1{
     font-size:2.5rem;
@@ -32,7 +31,6 @@ h1{
 .navigation{
    border: 1px solid white;
    padding:6px;
-   color:white;
    border-radius: 15px;
    font-size:15px;
 }
@@ -222,4 +220,76 @@ h1{
 }
 .login-button:active{
   background-color: hsl(248, 100%, 72%);
+}
+/*stying admin page*/
+.admin-dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+section {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #e7e7e7;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+li button {
+  background-color: #f44336;
+  margin: 0;
+}
+
+li button:hover {
+  background-color: #e41f1f;
 }

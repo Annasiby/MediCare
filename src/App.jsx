@@ -3,7 +3,7 @@ import {Routes, Route, BrowserRouter } from 'react-router-dom'
 import Home from './pages/Home'
 import Doctor from './pages/Doctor'
 import Patient from './pages/Patient'
-//import Admin from './pages/Admin'
+import Admin from './pages/Admin'
 import Aboutus from './pages/Aboutus'
 import Footer from './components/Footer'
 import Login from './pages/Login'
@@ -12,6 +12,7 @@ import MyAppointments from './pages/MyAppointments'
 import Navbar from './components/Navbar'
 import Appointment from './components/Appointment'
 import './App.css'
+import Register from './pages/register'
 const App = () => {
   return (
     <div className='mx-4 sm:mx-[10%]'>
@@ -25,11 +26,12 @@ const App = () => {
         <Route path='/doctors' element={<Doctor />} />
         <Route path='/doctors/:speciality' element={<Doctor />} />
         <Route path='/patient' element={<Patient />} /> 
-        {/*<Route path='/admin' element={<Admin />} />*/}
+        <Route path='/admin' element={<Admin />} />
         <Route path='/login' element={<Login />} />
         <Route path='/my-profile' element={<MyProfile />} />
         <Route path='/my-appointments' element={<MyAppointments />} />
         <Route path='/appointment' element={<Appointment />} />
+        <Route path='/register' element={<Register />} />
       </Routes>
     <Footer />
     </div>
