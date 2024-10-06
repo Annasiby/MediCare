@@ -1,0 +1,14 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E0F7FA;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
