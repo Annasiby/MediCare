@@ -8,7 +8,6 @@ import Aboutus from './pages/Aboutus'
 import Footer from './components/Footer'
 import Login from './pages/Login'
 import MyProfile from './pages/MyProfile'
-import MyAppointments from './pages/MyAppointments'
 import Navbar from './components/Navbar'
 import Appointment from './components/Appointment'
 import './App.css'
@@ -22,14 +21,12 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/footer' element={<Footer />} />   
         <Route path='/about-us' element={<Aboutus />} />
-        
         <Route path='/doctors' element={<Doctor />} />
         <Route path='/doctors/:speciality' element={<Doctor />} />
         <Route path='/patient' element={<Patient />} /> 
         <Route path='/admin' element={<Admin />} />
         <Route path='/login' element={<Login />} />
         <Route path='/my-profile' element={<MyProfile />} />
-        <Route path='/my-appointments' element={<MyAppointments />} />
         <Route path='/appointment' element={<Appointment />} />
         <Route path='/register' element={<Register />} />
       </Routes>
