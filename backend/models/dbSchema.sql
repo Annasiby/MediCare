@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS prescription (
     Patient_ID INT,
     Doctor_ID INT,
     diagnosis TEXT NOT NULL,
-    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  -- Keeps date and time of creation
+    date DATE,  -- Keeps only the date, no default value
     FOREIGN KEY (Patient_ID) REFERENCES patients(PID) ON DELETE CASCADE,
     FOREIGN KEY (Doctor_ID) REFERENCES doctor(DID) ON DELETE CASCADE
 );

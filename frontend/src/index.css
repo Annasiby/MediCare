@@ -320,3 +320,12 @@ li button:hover {
   margin-top: 15px; /* Space above signup text */
   font-size: 14px; /* Font size for signup text */
 }
+
+.button1 {
+  background-color: hsl(248, 100%, 62%);
+}
+
+.button1:hover{
+  background-color: hsl(248, 98%, 58%);
+}
+
