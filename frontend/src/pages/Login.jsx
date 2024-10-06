@@ -102,7 +102,7 @@ const Login = () => {
           />
         </div>
         <button type="submit" className="login-button">
-          {role === 'Patient' ? 'Sign Up' : 'Login'} {/* Change button text based on role */}
+          {role === 'Patient' ? 'Login' : 'Login'} {/* Change button text based on role */}
         </button>
         {role === 'Patient' && ( // Show the register link only for patients
           <p className="signup-text">
