@@ -48,12 +48,7 @@ router.post('/departments', async (req, res) => {
 
 // Adding doctor
 router.post('/doctors', async (req, res) => {
-    const { Dname, username, password, confirmPassword, email, phone_no, department } = req.body;
-
-    // Check if password and confirmPassword match
-    if (password !== confirmPassword) {
-        return res.status(400).json({ message: "Passwords do not match." });
-    }
+    const { Dname, username, password, email, phone_no, department } = req.body; // Remove confirmPassword from backend
 
     try {
         // Check if the doctor already exists by username
@@ -179,19 +174,19 @@ router.get('/prescriptions/:id', async (req, res) => {
 });
 
 router.post('/bills', (req, res) => {
-    const { prescriptionId, totalAmount } = req.body;
-  
-    const query = `INSERT INTO bill (Pres_ID, tot_amnt) VALUES (?, ?)`;
-  
-    db.query(query, [prescriptionId, totalAmount], (err, result) => {
-      if (err) {
-        console.error('Error inserting bill:', err);
-        return res.status(500).json({ error: 'Failed to add bill to the database' });
-      }
-  
-      res.status(201).json({ message: 'Bill added successfully', billId: result.insertId });
-    });
+  const { prescriptionId, totalAmount } = req.body;
+
+  const query = `INSERT INTO bill (Pres_ID, tot_amnt) VALUES (?, ?)`;
+
+  db.query(query, [prescriptionId, totalAmount], (err, result) => {
+    if (err) {
+      console.error('Error inserting bill:', err);
+      return res.status(500).json({ error: 'Failed to add bill to the database' });
+    }
+
+    res.status(201).json({ message: 'Bill added successfully', billId: result.insertId });
   });
-  
+});
+
 
 module.exports = router;

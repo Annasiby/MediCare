@@ -329,3 +329,26 @@ li button:hover {
   background-color: hsl(248, 98%, 58%);
 }
 
+.Patient-Buttons {
+  background-color: hsl(248, 100%, 72%); /* Primary Button Color */
+  color: white; /* Text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect - Slightly Darker */
+.Patient-Buttons:hover {
+  background-color: hsl(248, 100%, 62%); /* Darker shade on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add slight shadow */
+}
+
+/* Click Effect - Even Darker */
+.Patient-Buttons:active {
+  background-color: hsl(248, 100%, 52%); /* Darkest shade on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+  transform: translateY(2px); /* Gives a pressed button effect */
+}
