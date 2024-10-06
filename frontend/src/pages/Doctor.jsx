@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import DatePicker from '../components/DatePicker';
-import Appointment from '../components/Appointment';
-import PatientRecord from '../components/PatientRecord';
+import DatePicker from './DatePicker';
+import Appointment from './Appointment';
+import PatientRecord from './PatientRecord';
 
 const Doctor = () => {
   const [selectedDate, setSelectedDate] = useState(null);
