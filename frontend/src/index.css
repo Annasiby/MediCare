@@ -352,3 +352,166 @@ li button:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
   transform: translateY(2px); /* Gives a pressed button effect */
 }
+
+.doctor-page {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+}
+
+.doctor-info-box {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.appointment-date-selector, .appointments-list, .prescription-section {
+  margin-bottom: 20px;
+}
+
+.date-input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.appointment-item {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+  transition:
+}
+
+/* Prescription Section Styling */
+.prescription-section {
+  border: 1px solid #dee2e6; /* Light gray border for elegance */
+  border-radius: 10px; /* Smooth rounded corners */
+  padding: 30px; /* Generous padding for a clean layout */
+  margin: 30px 0; /* Spacing between the section and other content */
+  background-color: #ffffff; /* White background for cleanliness */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  font-family: 'Arial', sans-serif; /* Professional font */
+}
+
+/* Header Styling */
+.prescription-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px; /* Space under headings */
+  color: hsl(248, 100%, 72%); /* Vibrant purple for headers */
+  text-transform: uppercase; /* Make headers stand out */
+}
+
+.prescription-section h4 {
+  font-size: 1.25em;
+  margin-top: 30px; /* Space above subsections */
+  color: #495057; /* Slightly lighter gray for subheadings */
+}
+
+/* Patient Details Section */
+.patient-details p {
+  font-size: 1em; /* Standard text size */
+  color: #495057; /* Medium gray for patient info */
+  margin-bottom: 8px; /* Space between patient details */
+}
+
+.patient-details strong {
+  color: hsl(248, 100%, 72%); /* Highlight labels in vibrant purple */
+}
+
+/* Diagnosis Textarea Styling */
+.diagnosis-textarea {
+  width: 100%; /* Full width of the container */
+  height: 120px; /* Fixed height for readability */
+  border: 2px solid #ced4da; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Inner padding */
+  margin-top: 10px; /* Space above textarea */
+  font-size: 1em; /* Standard text size */
+  background-color: #f8f9fa; /* Light background for focus */
+  transition: border-color 0.3s ease; /* Smooth hover transition */
+}
+
+.diagnosis-textarea:focus {
+  border-color: hsl(248, 100%, 72%); /* Purple border on focus for better UI */
+  outline: none; /* Remove default outline */
+}
+
+/* Medicines Select Styling */
+.medicine-select {
+  margin-top: 20px; /* Space above medicine select */
+}
+
+.selected-medicines {
+  display: flex; /* Flex layout for medicines */
+  flex-wrap: wrap; /* Wrap to the next line */
+  margin-top: 10px; /* Space above selected medicines */
+}
+
+/* Individual Medicine Box */
+.medicine-box {
+  background-color: #e9f7fe; /* Light blue background for selected meds */
+  border: 1px solid hsl(248, 100%, 72%); /* Purple border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 8px 12px; /* Space inside each box */
+  margin: 5px; /* Space between medicine boxes */
+  display: flex; /* Flex layout for button alignment */
+  justify-content: space-between; /* Space out text and button */
+  align-items: center; /* Center items vertically */
+  font-size: 0.9em; /* Slightly smaller text */
+  color: hsl(248, 100%, 72%); /* Purple text */
+}
+
+/* Remove Medicine Button */
+.remove-medicine-button {
+  background-color: #0769fd; /* Red background for remove button */
+  border: none; /* Remove default border */
+  color: white; /* White text */
+  padding: 5px 8px; /* Inner padding */
+  border-radius: 50%; /* Circular button */
+  cursor: pointer; /* Pointer on hover */
+  font-size: 0.8em; /* Slightly smaller text */
+  line-height: 1; /* Adjust for icon or text */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.remove-medicine-button:hover {
+  background-color: #5d06ff; /* Darker red on hover */
+}
+
+/* Action Buttons Styling */
+.prescription-actions {
+  display: flex; /* Flex layout for buttons */
+  justify-content: space-between; /* Space between action buttons */
+  margin-top: 30px; /* Space above buttons */
+}
+
+.action-button {
+  background-color: hsl(248, 100%, 72%); /* Vibrant purple background */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 12px 20px; /* Spacious padding for touch devices */
+  font-size: 1em; /* Standard text size */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.action-button:hover {
+  background-color: hsl(248, 100%, 62%); /* Darker purple on hover */
+}
+
+.action-button:active {
+  background-color: hsl(248, 100%, 52%); /* Even darker purple on click */
+}
+
+.action-button:disabled {
+  background-color: #6c757d; /* Gray for disabled state */
+  cursor: not-allowed; /* No pointer on disabled */
+}
