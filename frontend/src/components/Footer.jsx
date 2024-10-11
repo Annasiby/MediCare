@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Footer = () => {
+const Footer = React.forwardRef((props, ref) => {
   return (
     <div>
-      <footer className="footer">
+      <footer ref={ref} className="footer">
       <div className="footer-content">
         <div className="footer-section">
           <h3>Emergency Contact</h3>
@@ -31,6 +31,6 @@ const Footer = () => {
     </footer>
     </div>
   )
-}
+})
 
 export default Footer
