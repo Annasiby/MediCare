@@ -24,15 +24,15 @@ const Home = () => {
       <h1>Choose your role</h1>
        <div className="role-choose ">
         <div className="role-card">
-          <img className=' role ' src="/admin.png" alt="Admin" />
+          <img className=' role ' src="/adminnew.jpg" alt="Admin" />
           <button  className="role-btn" onClick={()=>gotoLogin('Admin')} >Admin</button>
         </div>
         <div className="role-card">
-          <img className='role 'src="/patient.png" alt="Patient" />
+          <img className='role 'src="/patientnew.jpg" alt="Patient" />
           <button className="role-btn" onClick={()=>gotoLogin('Patient')}>Patient</button>
         </div>
         <div className="role-card">
-          <img className='role 'src="/doctor.png" alt="Doctor" />
+          <img className='role 'src="/doctornew.jpg" alt="Doctor" />
           <button className="role-btn" onClick={()=>gotoLogin('Doctor')}>Doctor</button>
         </div>
       </div>

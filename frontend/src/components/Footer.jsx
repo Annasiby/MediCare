@@ -26,7 +26,7 @@ const Footer = React.forwardRef((props, ref) => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2024 Hospital Management System. All rights reserved.</p>
+        <p>&copy; 2024 XYZ Hospital. All rights reserved.</p>
       </div>
     </footer>
     </div>

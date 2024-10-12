@@ -3,20 +3,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  padding: none;
+  background-image: url('background1.jpg'); /* Add background image here */
+  background-size: cover; /* Ensure image covers entire background */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Make the background fixed */
+  font-family: "Montserrat", sans-serif;
+}
 
 .nav{
-    background-color: hsl(248, 100%, 72%);
+    background-color: rgb(125, 136, 146);
     padding-left:30px;
     padding-right:30px;
     border-radius: 10px;
-    height: 70px;
+    height: 80px;
     width:100%;
     box-shadow:0 15px 20px rgb(0, 0, 0, 0.1);
     position:relative;
     border-bottom: 1px solid;
 }
+.text-container {
+  display: flex;
+  flex-direction: column; /* Stacks name and tagline */
+  align-items: flex-start; /* Aligns both left */
+}
+.logo-text-container {
+  display: flex;
+  align-items: center; /* Align logo and text vertically */
+}
+
+/* App Name Styles */
+.app-name {
+  font-size: 2rem;
+  color: #303c6f; 
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Tagline Styles */
+.tagline {
+  font-size: 1rem; /* Smaller font for tagline */
+  margin: 0;
+  color: #444862; /* Lighter color for tagline */
+}
 .ic{
-    height: 45px;
+    height: 60px;
+    width: 60px;
+    margin-right: 15px;
+   
 }
 .Name {
     font-size:30px;
@@ -25,9 +63,11 @@
 h1{
     font-size:2.5rem;
     display:flex;
+    
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
 }
+
 .navigation{
    border: 1px solid white;
    padding:6px;
@@ -35,34 +75,36 @@ h1{
    font-size:15px;
 }
 .navigation:hover{
-  background-color: hsl(248, 100%, 82%);
+  background-color: hsl(246, 9%, 60%);
+  
 }
 .navigation:active{
-  background-color: hsl(248, 100%, 72%);
+  background-color: hsl(248, 10%, 51%);
 }
 .About{
     font-size: 1.25rem;
+   
 
 }
 .role-choose{
     display:flex;
-    gap:50px;
+    gap:10px;
     justify-content: center;
     align-items: center;
-    border:1px solid hsl(0, 0%, 80%);
-    background-color: hsl(248, 100%, 72%);
+    border:1px  hsl(205, 10%, 33%);
+    background-color: rgba(185, 187, 216, 0);;
     padding:10px;
     margin:10px;
     border-radius:10px;
-    box-shadow:0 15px 20px rgb(0, 0, 0, 0.1);
+    box-shadow:0 15px 20px rgba(38, 36, 36, 0.1);
 }
 .role-card{
-    border:1px solid white;
+    
     border-radius: 5px;
     padding:10px;
-    display: grid;
+    display:grid;
     place-items: center;
-    background-color:white;
+    background-color:rgb(243, 238, 244);
     height:400px;
     width:400px;
     font-size: 2rem;
@@ -73,15 +115,16 @@ h1{
 .role-btn{
   border-radius :2px;
   padding:7px;
-  background-color: hsl(248, 80%, 72%);
+  background-color: hsl(248, 13%, 44%);
   color:white;
 }
 .role-btn:hover{
-    background-color:hsl(248, 80%, 82%);
+    background-color:hsl(246, 9%, 60%);
+  
     cursor: pointer;
 }
 .role-btn:active{
-    background-color:hsl(248, 80%, 72%);
+    background-color:hsl(248, 8%, 38%);
 }/*Footer section */
 .footer{
     border-top: 1px solid;
@@ -116,9 +159,9 @@ h1{
   
   .footer-section p,
   .footer-section a {
-    color: #bbb;
-    font-size: 14px;
-    text-decoration: none;
+    color: #1c1818;
+    font-size: 15px;
+    text-decoration:double;
   }
   
   .footer-section a:hover {
@@ -135,7 +178,7 @@ h1{
   }
   
   .footer-bottom {
-    background-color: hsl(248, 100%, 72%);
+    background-color: rgb(125, 136, 146);
     padding: 10px;
     font-size: 14px;
     margin-top: 20px;
@@ -165,7 +208,8 @@ h1{
       padding:none;
   }
   .login-container{
-    background-color: white;
+    background-color: rgb(20, 40, 105);
+    
     padding:2rem 1.5rem;
     margin:auto;
     max-width:410px;
@@ -174,6 +218,7 @@ h1{
   }
    .login-container .form-title{
     text-align:center;
+    color: #ece2e2;
     font-size: 1.37rem;
     margin-bottom:1.87rem;
     font-weight: 600;
@@ -219,13 +264,14 @@ h1{
   background-color: hsl(0, 0%, 80%);
 }
 .login-button:active{
-  background-color: hsl(248, 100%, 72%);
+  background-color: hsl(247, 11%, 53%);
 }
 /*stying admin page*/
 .admin-dashboard {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  
 }
 
 h1 {
@@ -286,12 +332,12 @@ li {
 }
 
 li button {
-  background-color: #f44336;
+  background-color: #45e16c;
   margin: 0;
 }
 
 li button:hover {
-  background-color: #e41f1f;
+  background-color: #0b6210;
 }
 /* Styles for the buttons */
 .login-button,
@@ -319,18 +365,19 @@ li button:hover {
 .signup-text {
   margin-top: 15px; /* Space above signup text */
   font-size: 14px; /* Font size for signup text */
+  color: #f5eded;
 }
 
 .button1 {
-  background-color: hsl(248, 100%, 62%);
+  background-color: hsl(248, 63%, 62%);
 }
 
 .button1:hover{
-  background-color: hsl(248, 98%, 58%);
+  background-color: hsl(248, 49%, 51%);
 }
 
 .Patient-Buttons {
-  background-color: hsl(248, 100%, 72%); /* Primary Button Color */
+  background-color: #4fb452;/* Primary Button Color */
   color: white; /* Text color */
   padding: 10px 20px;
   border: none;
@@ -342,13 +389,13 @@ li button:hover {
 
 /* Hover Effect - Slightly Darker */
 .Patient-Buttons:hover {
-  background-color: hsl(248, 100%, 62%); /* Darker shade on hover */
+  background-color:#1b721e;/* Darker shade on hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add slight shadow */
 }
 
 /* Click Effect - Even Darker */
 .Patient-Buttons:active {
-  background-color: hsl(248, 100%, 52%); /* Darkest shade on click */
+  background-color:#0a2f0b; /* Darkest shade on click */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
   transform: translateY(2px); /* Gives a pressed button effect */
 }
@@ -386,7 +433,7 @@ li button:hover {
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 5px 0;
-  transition:
+  transition: 1
 }
 
 /* Prescription Section Styling */
@@ -404,7 +451,7 @@ li button:hover {
 .prescription-section h3 {
   font-size: 1.5em;
   margin-bottom: 20px; /* Space under headings */
-  color: hsl(248, 100%, 72%); /* Vibrant purple for headers */
+  color: #4CAF50; /* Vibrant purple for headers */
   text-transform: uppercase; /* Make headers stand out */
 }
 
@@ -422,7 +469,7 @@ li button:hover {
 }
 
 .patient-details strong {
-  color: hsl(248, 100%, 72%); /* Highlight labels in vibrant purple */
+  color: hsl(135, 54%, 40%); /* Highlight labels in vibrant purple */
 }
 
 /* Diagnosis Textarea Styling */
@@ -439,7 +486,7 @@ li button:hover {
 }
 
 .diagnosis-textarea:focus {
-  border-color: hsl(248, 100%, 72%); /* Purple border on focus for better UI */
+  border-color: hsl(119, 79%, 57%); /* Purple border on focus for better UI */
   outline: none; /* Remove default outline */
 }
 
@@ -457,7 +504,7 @@ li button:hover {
 /* Individual Medicine Box */
 .medicine-box {
   background-color: #e9f7fe; /* Light blue background for selected meds */
-  border: 1px solid hsl(248, 100%, 72%); /* Purple border */
+  border: 1px solid hsl(126, 57%, 52%); /* Purple border */
   border-radius: 5px; /* Rounded corners */
   padding: 8px 12px; /* Space inside each box */
   margin: 5px; /* Space between medicine boxes */
@@ -465,12 +512,12 @@ li button:hover {
   justify-content: space-between; /* Space out text and button */
   align-items: center; /* Center items vertically */
   font-size: 0.9em; /* Slightly smaller text */
-  color: hsl(248, 100%, 72%); /* Purple text */
+  color: hsl(130, 68%, 56%); /* Purple text */
 }
 
 /* Remove Medicine Button */
 .remove-medicine-button {
-  background-color: #0769fd; /* Red background for remove button */
+  background-color: #34cf3e; /* Red background for remove button */
   border: none; /* Remove default border */
   color: white; /* White text */
   padding: 5px 8px; /* Inner padding */
@@ -482,7 +529,7 @@ li button:hover {
 }
 
 .remove-medicine-button:hover {
-  background-color: #5d06ff; /* Darker red on hover */
+  background-color: #1a6b2e; /* Darker red on hover */
 }
 
 /* Action Buttons Styling */
@@ -493,7 +540,7 @@ li button:hover {
 }
 
 .action-button {
-  background-color: hsl(248, 100%, 72%); /* Vibrant purple background */
+  background-color: hsl(141, 60%, 58%); /* Vibrant purple background */
   color: white; /* White text */
   border: none; /* Remove default border */
   border-radius: 5px; /* Rounded corners */
@@ -504,11 +551,11 @@ li button:hover {
 }
 
 .action-button:hover {
-  background-color: hsl(248, 100%, 62%); /* Darker purple on hover */
+  background-color: hsl(142, 71%, 45%); /* Darker purple on hover */
 }
 
 .action-button:active {
-  background-color: hsl(248, 100%, 52%); /* Even darker purple on click */
+  background-color: hsl(144, 82%, 24%); /* Even darker purple on click */
 }
 
 .action-button:disabled {

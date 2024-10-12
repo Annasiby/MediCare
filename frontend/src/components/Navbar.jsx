@@ -3,9 +3,14 @@ import { NavLink } from 'react-router-dom'
 
 const Navbar = ({scrollToFooter}) => {
   return (
-    <div className='nav flex items-center justify-between text-sm py-4  mb-5  border-b border-b-gray-400'>              
-      <img className=' ic cursor-pointer' src='/logo.png' alt=" logo" />
-      <h1 className='Name'>Hospital Management</h1>
+    <div className='nav flex items-center justify-between text-sm py-4  mb-5  border-b border-b-gray-400'>    
+    <div class="logo-text-container">          
+      <img className=' ic cursor-pointer' src='/logo2.jpg' alt=" logo" />
+      <div class="text-container">
+        <h1 class="app-name">Medicare</h1>
+        <p class="tagline">Your Health, Our Priority</p>
+    </div>
+    </div>
         <ul className='hidden md:flex items-start gap-5 font-medium'>
             <NavLink to='/'>
                 <li className='navigation py 1'>Home</li>
