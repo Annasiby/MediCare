@@ -16,9 +16,10 @@ const Home = () => {
     };
 
   return (
-    <div className='roles '>
+    <div className='roles'>
       <p className="About">
-      Our Hospital Management System is designed to streamline hospital operations and enhance patient care. With advanced features like patient management, doctor scheduling, billing, and real-time data access, we aim to simplify healthcare processes for hospitals, clinics, and medical centers. Our platform prioritizes efficiency, security, and a seamless experience for both healthcare providers and patients. 
+      Medicare Hospital has dedicated Centres of Excellence for several key specialties and super specialties. They are unique and state of the art facilities spread across several of the Medicare hospital locations and each Centre of Excellence stands out as a citadel of world class clinical outcomes.
+
       <br></br>
       </p>
       <h1>Choose your role</h1>

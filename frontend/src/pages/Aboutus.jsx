@@ -5,36 +5,38 @@ const Aboutus = () => {
     <div>
         <h1 className='role-choose'>About Us</h1>
         <p className="About">
-            Welcome to our Hospital Management System (HMS) – a state-of-the-art platform designed to transform the way healthcare facilities operate. We are committed to enhancing patient care, streamlining hospital workflows, and improving the overall healthcare experience. Whether you’re managing a large hospital, a clinic, or a medical center, our platform is built to meet your specific needs with ease and efficiency.
+        Back in the day, we realised that just as innovation in medical science is elementary to the growth of healthcare, we need to bring innovation in how we take quality healthcare to everyone.
+We realised that it is not merely a transaction of health services between a patient and doctor. It is trust that fosters a healthy relationship in the journey of health.
+As we move with the times, we realise that technology has a huge role in making our services way more efficient. And by its application, way more human as well.
+We have a dream. Our dream is to be available to you round the clock, wherever you are and whenever you want. We want to be just one tap away from you, and this will be the beginning of consumer-centric healthcare.
         <br />
-            At the heart of our solution is a dedication to providing healthcare providers with the tools they need to deliver top-quality care while simplifying administrative tasks. Our HMS offers a complete suite of features designed to improve the daily operations of healthcare institutions and ensure a seamless experience for patients and staff alike.
-        <br />
+            At the heart of our solution is a dedication to providing healthcare providers with the tools they need to deliver top-quality care while simplifying administrative tasks. 
         </p>
 
-        <h2 className='role-choose'>Our Mission</h2>
+        <h1 className='role-choose'>Our Mission</h1>
         <p className="About">
-            We believe that healthcare should be efficient, secure, and accessible. Our mission is to support healthcare institutions in delivering the highest standard of patient care while minimizing operational complexity. We strive to create an environment where healthcare professionals can focus on what they do best – caring for patients.
+        At Medicare Hospital, our mission is to deliver accessible, compassionate, and top-quality healthcare to everyone, anytime, anywhere. We are committed to leveraging technology to make healthcare seamless, bringing specialized care closer to those who need it, and fostering a healthier world.
         </p>
 
-        <h2 className='role-choose'>Why Choose Us?</h2>
+        <h1 className='role-choose'>Why Choose Us?</h1>
         <p className="About">
-            Our Hospital Management System is built with a focus on:
+            
+        
+        Expert Care: Access a team of highly qualified doctors and specialists, ready to provide expert medical care.
         <br />
-            Efficiency: Automating key hospital functions to reduce administrative workload and increase operational efficiency.
+        Convenient & Efficient: Schedule appointments, access records, and consult with doctors easily from your device.
         <br />
-            Security: Protecting sensitive patient data with advanced encryption, role-based access, and compliance with healthcare regulations like HIPAA.
+        Patient-Centric: Our approach prioritizes patient comfort, privacy, and personalized treatment plans tailored to individual needs.
         <br />    
-            Scalability: A flexible platform that grows with your institution, capable of handling the needs of small clinics or large hospitals.
-        <br />
-            Data-Driven Insights: Built-in analytics and reporting tools that provide valuable insights to help improve hospital performance and patient outcomes.
+        24/7 Support: We are here around the clock to provide assistance and healthcare support when you need it the most.
         </p>
         
-        <h2 className='role-choose'>Our Commitment </h2>
+        <h1 className='role-choose'>Our Commitment </h1>
         <p className="About">
-            We are committed to delivering a platform that not only meets the technological demands of today’s healthcare industry but also ensures the best possible experience for both healthcare providers and patients. Through continuous innovation and customer-focused development, we strive to make healthcare simpler, more secure, and more effective.
+          We are committed to upholding the highest standards in healthcare, with a commitment to patient safety, innovative treatments, and continuous improvement. We strive to create a safe and compassionate environment for patients and their families, offering reliable healthcare you can trust.
         <br />
         <br />
-            Thank you for choosing our Hospital Management System. Together, we are shaping the future of healthcare.
+            Thank you for choosing us. Together, we are shaping the future of healthcare.
         </p>
 
       <br></br>
