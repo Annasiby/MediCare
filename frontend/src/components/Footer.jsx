@@ -3,6 +3,7 @@ import React from 'react'
 const Footer = React.forwardRef((props, ref) => {
   return (
     <div>
+      <br></br>
       <footer ref={ref} className="footer">
       <div className="footer-content">
         <div className="footer-section">

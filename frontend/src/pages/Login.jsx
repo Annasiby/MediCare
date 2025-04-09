@@ -79,7 +79,7 @@ const Login = () => {
       <h2 className="form-title">Login Page</h2>
       {role && <p>Logging in as: {role}</p>}
       {error && <p className="error-message">{error}</p>} {/* Display error message */}
-      <form onSubmit={handleSubmit} className="login form">
+      <form onSubmit={handleSubmit} className="loginform">
         <div className="inputs">
           <input
             type="text"
@@ -111,6 +111,7 @@ const Login = () => {
         )}
       </form>
     </div>
+   
   );
 };
 

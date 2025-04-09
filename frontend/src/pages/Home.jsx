@@ -21,8 +21,9 @@ const Home = () => {
       Medicare Hospital has dedicated Centres of Excellence for several key specialties and super specialties. They are unique and state of the art facilities spread across several of the Medicare hospital locations and each Centre of Excellence stands out as a citadel of world class clinical outcomes.
 
       <br></br>
+      <br></br>
       </p>
-      <h1>Choose your role</h1>
+      <h1>Select Your Role</h1>
        <div className="role-choose ">
         <div className="role-card">
           <img className=' role ' src="/adminnew.jpg" alt="Admin" />
