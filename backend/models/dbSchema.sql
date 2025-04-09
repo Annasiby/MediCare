@@ -1,6 +1,6 @@
 -- Patients Table
 CREATE TABLE IF NOT EXISTS patients (
-    PID INT AUTO_INCREMENT PRIMARY KEY,  -- Auto-increment for Patient ID
+    PID INT AUTO_INCREMENT PRIMARY KEY,  
     FName VARCHAR(50) NOT NULL,
     LName VARCHAR(50) NOT NULL,
     DOB DATE NOT NULL,
@@ -8,22 +8,22 @@ CREATE TABLE IF NOT EXISTS patients (
     Phone_no VARCHAR(15),
     email VARCHAR(100),
     address TEXT,
-    username VARCHAR(50) NOT NULL UNIQUE,  -- Added username column
+    username VARCHAR(50) NOT NULL UNIQUE, 
     password VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Department Table
 CREATE TABLE IF NOT EXISTS department (
-    Dept_ID INT AUTO_INCREMENT PRIMARY KEY,  -- Auto-increment for Department ID
+    Dept_ID INT AUTO_INCREMENT PRIMARY KEY,  
     Dept_name VARCHAR(100) NOT NULL
 );
 
 -- Doctor Table
 CREATE TABLE IF NOT EXISTS doctor (
-    DID INT AUTO_INCREMENT PRIMARY KEY,  -- Auto-increment for Doctor ID
+    DID INT AUTO_INCREMENT PRIMARY KEY,  
     Dname VARCHAR(50) NOT NULL,
-    username VARCHAR(50) NOT NULL UNIQUE,  -- Added username column
+    username VARCHAR(50) NOT NULL UNIQUE,  
     password VARCHAR(255) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
     phone_no VARCHAR(15) NOT NULL,
@@ -33,9 +33,9 @@ CREATE TABLE IF NOT EXISTS doctor (
 
 -- Admins Table (Add username for login)
 CREATE TABLE IF NOT EXISTS admins (
-    Adm_ID INT AUTO_INCREMENT PRIMARY KEY,  -- Auto-increment for Admin ID
+    Adm_ID INT AUTO_INCREMENT PRIMARY KEY,  
     Admin_name VARCHAR(50) NOT NULL,
-    username VARCHAR(50) NOT NULL UNIQUE,  -- Added username column
+    username VARCHAR(50) NOT NULL UNIQUE,
     email VARCHAR(100) NOT NULL UNIQUE,
     phone_no VARCHAR(15) NOT NULL,
     password VARCHAR(255) NOT NULL,
@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS admins (
 
 -- Appointments Table
 CREATE TABLE IF NOT EXISTS appointments (
-    AppID INT AUTO_INCREMENT PRIMARY KEY,  -- Auto-increment for Appointment ID
+    AppID INT AUTO_INCREMENT PRIMARY KEY,  
     Patient_ID INT,
     Doctor_ID INT,
     token_no INT NOT NULL,
@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS appointments (
 
 -- Prescription Table
 CREATE TABLE IF NOT EXISTS prescription (
-    Pres_ID INT AUTO_INCREMENT PRIMARY KEY,  -- Auto-increment for Prescription ID
+    Pres_ID INT AUTO_INCREMENT PRIMARY KEY,  
     Patient_ID INT,
     Doctor_ID INT,
     diagnosis TEXT NOT NULL,
@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS prescription (
 
 -- Medicine Table
 CREATE TABLE IF NOT EXISTS medicine (
-    Med_ID INT AUTO_INCREMENT PRIMARY KEY,  -- Auto-increment for Medicine ID
+    Med_ID INT AUTO_INCREMENT PRIMARY KEY,  
     name VARCHAR(100) NOT NULL,
     price DECIMAL(10, 2) NOT NULL
 );
@@ -84,7 +84,7 @@ CREATE TABLE IF NOT EXISTS prescription_medicines (
 
 -- Bill Table
 CREATE TABLE IF NOT EXISTS bill (
-    BID INT AUTO_INCREMENT PRIMARY KEY,  -- Auto-increment for Bill ID
+    BID INT AUTO_INCREMENT PRIMARY KEY,  
     Pres_ID INT,
     tot_amnt DECIMAL(10, 2) NOT NULL,
     date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
