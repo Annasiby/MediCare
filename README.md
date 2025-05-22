@@ -117,10 +117,3 @@ This project is for educational and development purposes only.
 ## 🙌 Contributing
 
 Contributions are welcome! Feel free to fork the repo, open issues, or submit pull requests.
-
----
-
-## 📬 Contact
-
-For questions or support, reach out at:  
-📧 [suhanasulfeekker04@gmail.com](mailto:suhanasulfeekker04@gmail.com)
